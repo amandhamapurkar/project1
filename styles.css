@@ -1,0 +1,131 @@
+/* Rutgers University Colors */
+:root {
+    --scarlet-red: #cc0033;
+    --white: #ffffff;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+nav {
+    background-color: var(--scarlet-red);
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    padding: 5em 1em;
+    background-color: var(--white);
+}
+
+header h1 {
+    color: var(--scarlet-red);
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+#learn-more {
+    background-color: var(--scarlet-red);
+    color: var(--white);
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+section {
+    padding: 4em 1em;
+    background-color: var(--white);
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: var(--scarlet-red);
+    margin-bottom: 1em;
+}
+
+#about img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 1em;
+    border-radius: 50%;
+}
+
+.experience-item {
+    margin-bottom: 2em;
+}
+
+.experience-item h3 {
+    color: var(--scarlet-red);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+form button {
+    background-color: var(--scarlet-red);
+    color: var(--white);
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--scarlet-red);
+    color: var(--white);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
